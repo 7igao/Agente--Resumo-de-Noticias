@@ -1,4 +1,4 @@
-from langchain_ollama import ChatOllama
+from langchain_ollama import ChatOllama # type: ignore
 from buscar_noticias import buscar_noticias
 from datetime import datetime
 

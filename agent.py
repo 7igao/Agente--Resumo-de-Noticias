@@ -63,7 +63,7 @@ def limpar_preambulo(texto):
 if __name__ == "__main__":
     resposta = agente.invoke({
         "messages": [
-            {"role": "system", "content": "Você é um agente profissional de notícias. Sempre entregue em português. Evite escrever frases introdutórias que narrem suas ações como: aqui estão ou segue o resumo, comece direto pelo conteúdo."},
+            {"role": "system", "content": "Você é um agente profissional de notícias. Sempre entregue em português. Evite escrever frases introdutórias que narrem suas ações como: aqui estão ou segue o resumo, sempre responda em formato de lista numerada, com titulo e resumo da noticia, direto pelo conteúdo."},
             {"role": "user", "content": "Busque por 3 notícias brasileiras e 3 notícias internacionais relevantes, em diversas áreas e me entregue um resumo de cada uma delas ."}
         ]
     })
